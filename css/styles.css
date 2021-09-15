@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
 
 body {
@@ -29,36 +30,52 @@ body {
 /* site nav */
 
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .info-nav .link {
-  color: #757575;
+  color: var(--title-text-color);
 }
 
 .info-nav .link:hover,
 .info-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Hero */
 
 .hero-title {
   background-color: #2f303a;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /* Section */
 
 .section-title {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .section-text {
-  color: #757575;
+  color: var(--title-text-color);
+}
+/* Футер */
+
+.footer-nav {
+  background-color: #2f303a;
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
