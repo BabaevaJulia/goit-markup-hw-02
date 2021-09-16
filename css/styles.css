@@ -19,9 +19,9 @@ body {
 /* белый #FFFFFF */
 /* вторичный белый rgba(255, 255, 255, 0.6) */
 /* акцент #2196F3 */
-/* цвет футера вторичный rgba(255, 255, 255, 0.6)*/
 /* вторичный цвет фона #2F303A */
-/* третий цвет фона #F5F4FA */
+/* третий цвет фона #E5E5E5 */
+/* четвертый цвет фона #F5F4FA */
 
 .logo {
   color: ;
@@ -58,19 +58,22 @@ body {
   color: var(--primary-white-color);
 }
 
-/* Section */
+/* Приорететы */
+
+.section .work {
+  background-color: #e5e5e5;
+}
 
 .section-title {
   color: var(--primary-text-color);
 }
 
+.section-command {
+  background-color: #f5f4fa;
+}
+
 .section-text {
   color: var(--title-text-color);
-}
-/* Футер */
-
-.footer-nav {
-  background-color: #2f303a;
 }
 
 /* Button */
@@ -78,4 +81,13 @@ body {
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+/* Футер */
+
+.page-footer {
+  background-color: #2f303a;
+}
+.page-footer .address {
+  color: #ffffff;
 }
