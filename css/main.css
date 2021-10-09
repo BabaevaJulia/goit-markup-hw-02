@@ -6,9 +6,11 @@
   --primery-bg-color: #e5e5e5;
   --secondary-bg-color: #2f303a;
   --fourth-bg-color: #f5f4fa;
+  --nav-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
+  font-family: "Roboto", "Verdana", sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -16,6 +18,10 @@ body {
 
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* цвет основго текста #212121 */
@@ -28,7 +34,11 @@ body {
 /* четвертый цвет фона #F5F4FA */
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 .web {
   color: var(--accent-color);
@@ -45,6 +55,9 @@ body {
 
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
@@ -59,6 +72,9 @@ body {
 
 .info-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .info-nav .link:hover,
@@ -71,6 +87,21 @@ body {
 .hero-title {
   background-color: var(--secondary-bg-color);
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  font-family: inherit;
 }
 
 /* Приорететы */
@@ -81,33 +112,65 @@ body {
 
 .section-title {
   color: var(--primary-text-color);
-}
-
-.section-command {
-  background-color: var(--fourth-bg-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 1.14;
+  line-height: 16px;
 }
 
 .section-text {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
-/* Button */
+/* Чем мы занимаемся*/
+.section-work {
+  background-color: var(--primery-bg-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
 
-.button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+/*Наша команда*/
+.command {
+  background-color: var(--fourth-bg-color);
+}
+
+.command-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.command-subject {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.command-text {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* Футер */
 
 .page-footer {
+  color: var(--primary-white-color);
   background-color: var(--secondary-bg-color);
 }
-.address {
-  color: var(--primary-white-color);
+
+.web {
+  color: var(--accent-color);
 }
 
-.page-footer {
+.studio-footer {
   color: var(--primary-white-color);
 }
 
@@ -115,20 +178,58 @@ body {
   color: var(--accent-color);
 }
 
+.nav-footer .link {
+  color: var(--nav-footer-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.nav-footer .address {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.nav-footer .link:hover,
+.nav-footer .link:focus {
+  color: var(--accent-color);
+}
+
 /* Страница портфолио */
 
 /*  Фильтры */
 
-.section-hero {
+.section-info {
   background-color: var(--primery-bg-color);
 }
 
 .btn .link {
   color: var(--primary-text-color);
   background-color: var(--fourth-bg-color);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
+
 .btn .link:hover,
 .btn .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+/*Проэкты*/
+
+.projects-title {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+}
+
+.projects-text {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
