@@ -118,8 +118,8 @@ body {
 .section-title {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 1.14;
-  line-height: 16px;
+  font-size: 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
